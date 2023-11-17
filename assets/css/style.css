@@ -134,11 +134,11 @@ p{
     color: var(--maincolor);
     line-height: 25px;
 }
-.works{
+.works, .blog{
     align-items: flex-start;
 }
 
-.works div{
+.works div, .blog div{
     flex-direction: row;
     width: 100vw;
 }
@@ -201,4 +201,86 @@ background: linear-gradient(rgba(2, 56, 58, 0.7),rgba(2, 56, 58, 0.7)), url(../i
 }
 .img6{
 background: linear-gradient(rgba(2, 56, 58, 0.7),rgba(2, 56, 58, 0.7)), url(../img/Link1.png) center/cover no-repeat;
+}
+
+.services{
+    background: url(../img/services-bg.png) no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+    padding: 50px 0px;
+    width: 100vw;
+}
+
+.services p{
+    color: var(--maincolor);
+}
+
+.services h2{
+    color: var(--maincolor);
+    font-size: 4em;
+}
+
+[class^="servno"]{
+    width: 80vw;
+    margin: 40px 0px;
+    gap: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+.blog .heading{
+    justify-content: space-evenly;
+}
+
+.blog .post{
+    flex-direction: column;
+    text-align: left;
+    margin-top: 75px;
+}
+
+.post:nth-of-type(5){
+    margin-bottom: 80px;
+}
+.blog .desc{
+    padding-left: 1.7em;
+}
+
+.blog .post .preview{
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 30px;
+    gap: 30px;
+    padding-top: 20px;
+}
+
+.blog span{
+    font-style: italic;
+    color: var(--thirdcolor);
+}
+
+.blog a{
+    color: var(--fourthcolor);
+}
+
+.quote{
+    background: url(../img/parallax.png) no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+    width: 100vw;
+    padding-top: 40px;
+    gap: 10px;
+    padding-bottom: 60px;
+}
+
+.quote p{
+    color: white;
+    font-size: 3em;
+    text-align: center;
+}
+
+.reviews{
+    width: 100vw;
+    text-align: center;
+    background: #F1F0F0;
 }
