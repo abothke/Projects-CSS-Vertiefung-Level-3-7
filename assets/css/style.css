@@ -24,44 +24,56 @@ div{
     justify-content: center;
     align-content: center;
     align-items: center;
+}
+
+.page{
     width: 767px;
 }
-
-.header {
+header {
     height: 46vh;
-
-    background: url(../img/hero.png)  no-repeat;
+    background: url(../img/hero.png) no-repeat;
     background-size: 776px;
     background-position: center;  
-}
-
-header {
+    align-items: normal;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 70vh;
     color: var(--maincolor);
+    width: 100vw;
 }
 
 .burger__wrapper{
-    position: fixed;
-    top: 5px;
-    right: 5px;
-
+    align-items: flex-end;
 }
 
 .burger{
     height: 5px;
-    width: 30px;
+    width: 5px;
     background-color: var(--maincolor);
     margin: 2px;
-    border-radius: 10px;
+    width: 30px;
 }
 
 .navigation {
-    flex-direction: ;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.hero{
+    margin: 20px;
+    margin-top: 5rem;
 }
 
 nav{
+    margin: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    flex-wrap: nowrap;
 }
 
+h1{
+    font-size: 2.25rem;
+}
