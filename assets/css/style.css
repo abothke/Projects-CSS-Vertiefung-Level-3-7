@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --maincolor: #ffffff;
+    --secondcolor: #3A4F52;
+    --thirdcolor: #6A6A6A;
+    --fourthcolor: #4DA7CA;
+}
 
 body{
     display: flex;
@@ -20,3 +26,42 @@ div{
     align-items: center;
     width: 767px;
 }
+
+.header {
+    height: 46vh;
+
+    background: url(../img/hero.png)  no-repeat;
+    background-size: 776px;
+    background-position: center;  
+}
+
+header {
+    color: var(--maincolor);
+}
+
+.burger__wrapper{
+    position: fixed;
+    top: 5px;
+    right: 5px;
+
+}
+
+.burger{
+    height: 5px;
+    width: 30px;
+    background-color: var(--maincolor);
+    margin: 2px;
+    border-radius: 10px;
+}
+
+.navigation {
+    flex-direction: ;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
