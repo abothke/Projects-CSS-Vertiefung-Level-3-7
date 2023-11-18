@@ -25,7 +25,13 @@
     --secondcolor: #3A4F52;
     --thirdcolor: #6A6A6A;
     --fourthcolor: #4DA7CA;
+    --fifthcolor: #2B3E51;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+  }
 
 a{
     text-decoration: none;
@@ -269,8 +275,12 @@ background: linear-gradient(rgba(2, 56, 58, 0.7),rgba(2, 56, 58, 0.7)), url(../i
     background-attachment: fixed;
     width: 100vw;
     padding-top: 40px;
-    gap: 10px;
     padding-bottom: 60px;
+    gap: 5em;
+}
+
+.quote .button{
+    margin-bottom: 40px;
 }
 
 .quote p{
@@ -279,8 +289,94 @@ background: linear-gradient(rgba(2, 56, 58, 0.7),rgba(2, 56, 58, 0.7)), url(../i
     text-align: center;
 }
 
+.quote a{
+    font-size: 1.5em;
+}
+
 .reviews{
     width: 100vw;
     text-align: center;
     background: #F1F0F0;
+    padding-top: 30px;
+    gap: 20px;
+    padding-bottom: 100px;
+}
+
+
+.review{
+    display: flex;
+    gap: 30px;
+    padding-top: 40px;
+    width: 300px;
+    font-size: 1.5em;
+}
+
+.reviews span{
+    font-weight: 600;
+    color: var(--thirdcolor);
+    padding-top: 25px;
+}
+
+.reviewer{
+    display: flex;
+    gap: 10px;
+}
+
+.contact{
+    background: url(../img/contact.png) no-repeat;
+    background-position:bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+    padding-top: 100px;
+}
+
+.contact h2{
+    color: var(--maincolor);
+    font-size: 3em;
+}
+
+.contact p{
+    color: var(--maincolor);
+    padding-top:20px;
+    padding-bottom: 30px;
+    font-size: 1.25em;
+}
+
+.contact-form{
+    display: flex;
+    gap: 30px;
+    padding-bottom: 150px;
+}
+
+input{
+    background: transparent;
+    width: 80vw;
+    color: var(--maincolor);
+    border: 1px solid var(--maincolor);
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 1.25em;
+}
+
+input:nth-of-type(4){
+    width: 40vw;
+    border-radius: 0px;
+}
+
+::placeholder{
+    color: var(--maincolor);
+}
+
+footer{
+    display: flex;
+    background: var(--fifthcolor);
+    padding: 25px;
+    padding-bottom: 100px;
+    width: 100vw;
+}
+
+footer p{
+    color: var(--maincolor);
+    width: 150px;
 }
