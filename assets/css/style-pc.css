@@ -1,0 +1,19 @@
+@media only screen and (min-width: 768px) {
+
+    
+    html {
+        font-size: 18px;
+    }
+
+    .works {
+        display: flex;
+        flex-direction: row;
+        align-items: space-between;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%; 
+        margin-bottom: 6.25rem;
+        height: auto;
+    }
+}
+    
