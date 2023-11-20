@@ -5,7 +5,15 @@
         font-size: 18px;
     }
     
-   
+    header {
+        background-position: center;  
+        align-items: normal;
+        flex-direction: column;
+        justify-content: space-evenly;
+        color: var(--maincolor);
+        height: vh;
+    }
+    
     .works {
         display: flex;
         flex-direction: row;
