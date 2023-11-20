@@ -42,12 +42,20 @@
         padding-top: 100px;
         width: 80vw
     }
+
+    .desc{
+        justify-content: flex-start;
+    }
     .gallery1, .gallery2{
         flex-direction: row;
         flex-wrap: nowrap;
         gap: 3em;
         overflow: hidden;
         padding-top: 100px;
+    }
+
+    .gallery2{
+        padding-top: 0px;
     }
 
     .gallery1 .button, .gallery2 .button{
