@@ -5,12 +5,125 @@
         font-size: 18px;
     }
 
+    p{
+        font-size: 1.5em;
+    }
+
+    header{
+        background-size: 100%;
+        height: 1448px;
+    }
+    .heading{
+        justify-content: space-between;
+        padding: 0px 25px;
+    }
     .navigation{
         justify-content: space-between;
         padding: 0px 50px;
         margin-top: 1em;
     }
+    
+    .hero{
+        margin-top: 31em;
+        gap: 1rem;
+    }
 
+    .hero h2{
+        font-size: 4.75em;
+        letter-spacing: 0.1em;
+    }
+
+    .hero p{
+        font-size: 1.8em;
+        letter-spacing: 0.1em;
+    }
+
+    .works{
+        padding-top: 100px;
+        width: 80vw
+    }
+    .gallery1, .gallery2{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 3em;
+        overflow: hidden;
+        padding-top: 100px;
+    }
+
+    .gallery1 .button, .gallery2 .button{
+        display: none;
+        opacity: 0;
+ 
+    }
+
+    .img1{
+        background: url(../img/link6.png) center/cover no-repeat;
+        }
+        .img2{
+        background: url(../img/link5.png) center/cover no-repeat;
+        }
+        .img3{
+        background: url(../img/link4.png) center/cover no-repeat;
+        }
+        .img4{
+        background: url(../img/link3.png) center/cover no-repeat;
+        }
+        .img5{
+        background: url(../img/link2.png) center/cover no-repeat;
+        }
+        .img6{
+        background: url(../img/link1.png) center/cover no-repeat;
+        }
+
+        .img1:hover{
+            background: linear-gradient(rgba(2, 56, 58, 0.7),rgba(2, 56, 58, 0.7)),url(../img/link6.png) center/cover no-repeat;
+        }
+        .img2:hover{
+            background: linear-gradient(rgba(2, 56, 58, 0.7),rgba(2, 56, 58, 0.7)),url(../img/link5.png) center/cover no-repeat;
+        }
+        .img3:hover{
+            background: linear-gradient(rgba(2, 56, 58, 0.7),rgba(2, 56, 58, 0.7)),url(../img/link4.png) center/cover no-repeat;
+        }
+        .img4:hover{
+            background: linear-gradient(rgba(2, 56, 58, 0.7),rgba(2, 56, 58, 0.7)),url(../img/link3.png) center/cover no-repeat;
+        }
+        .img5:hover{
+            background: linear-gradient(rgba(2, 56, 58, 0.7),rgba(2, 56, 58, 0.7)),url(../img/link2.png) center/cover no-repeat;
+        }
+        .img6:hover, img6:focus{
+            background: linear-gradient(rgba(2, 56, 58, 0.7),rgba(2, 56, 58, 0.7)),url(../img/link1.png) center/cover no-repeat;
+            background-size: 200%;
+        }
+
+        [class^=img]:hover .button{
+            display: block;
+            animation: visible 0.5s forwards;
+        }
+
+        [class^=img]{
+            background-size: 150%;
+            transition: background-size 1s ease;
+        }
+
+        [class^=img]:hover, [class^=img]:focus{
+            background-size: 200%;
+        }
+
+        .svcs{
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+
+
+        @keyframes visible{
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+            }
+        }
     /* .works {
         display: flex;
         flex-direction: row;
