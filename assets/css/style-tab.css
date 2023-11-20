@@ -17,7 +17,7 @@
     .works {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: flex-end;
         flex-wrap: wrap;
         width: 100%; 
         margin-bottom: 6.25rem;
@@ -25,5 +25,34 @@
         background-color: transparent;
         width: 30%;
     }
+
+
+    .heading  {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    
+    }
+    .desc  {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+    }
+    
+    .gallery1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+    }
+    
+    .gallery2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+    }
+
 }    
 
